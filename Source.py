@@ -2,21 +2,16 @@ import time, requests, os, sys
 from colorama import Fore
 from datetime import datetime
 
-
 def printSlow(text):
     for char in text:
         print(char, end="")
         sys.stdout.flush()
         time.sleep(0.040)
-
-
+   
 def tokeninfo():
     os.system('cls')
     global token
     token = input("Enter token:   ")
-
-
-
 
     headers = {
         'Authorization': token,
